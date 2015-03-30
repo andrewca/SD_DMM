@@ -1,0 +1,1 @@
+"./SD_DMM-Prog.obj" "./Hal/Hal.obj" "./Em/SD_DMM-STUBS.obj" "./Em/SD_DMM.obj" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
