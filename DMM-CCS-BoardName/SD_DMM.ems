@@ -1,0 +1,9 @@
+version = "1.0.0"
+description = ""
+
+schema SD_DMM {
+
+	// insert resource definitions here 
+	int16 dataValue {readonly};
+    int8  controlValue
+};

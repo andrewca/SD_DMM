@@ -13,7 +13,14 @@ void SD_DMM_connectHandler(void) {
 void SD_DMM_disconnectHandler(void) {
     Hal_disconnected();
 }
-void SD_DMM_pinValue_fetch(SD_DMM_pinValue_t* output){
+void SD_DMM_dataValue_fetch(SD_DMM_dataValue_t* output){
     Hal_debugOn(1);
     *output = Hal_pinRead();
+}
+void SD_DMM_controlValue_fetch(SD_DMM_controlValue_t* output) {
+    *output = dataVal;
+}
+
+void SD_DMM_controlValue_store(SD_DMM_controlValue_t* input) {
+    dataVal = *input;
 }
